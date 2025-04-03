@@ -66,7 +66,7 @@ Bienvenido al equipo. Esta guía te ayudará a configurar tu entorno de desarrol
 ### a. Angular CLI
 1. Instala Angular CLI para el desarrollo frontend ejecutando:
     ```bash
-    npm install -g @angular/cli
+    npm install -g @angular/cli@16.2.0
     ```
 2. Verifica la instalación:
     ```bash
