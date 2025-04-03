@@ -15,14 +15,60 @@ Bienvenido al equipo. Esta guía te ayudará a configurar tu entorno de desarrol
    ```
 
 ### b. Node.js y npm
-1. Descarga la versión 16.20.2 de Node.js desde [nodejs.org](https://nodejs.org/en/) y sigue el instalador.
-2. Verifica la instalación:
+
+#### Debes instalar nvm para manejar la version de node
+1. Ve al repositorio oficial de nvm-windows en GitHub:
+👉 https://github.com/coreybutler/nvm-windows/releases
+
+2. Descarga el instalador más reciente (nvm-setup.exe).
+
+3. Ejecuta el archivo y sigue las instrucciones de instalación.
+
+4. Reinicia tu terminal después de la instalación.
+5. Veridica la instalacion 
     ```bash
-    node -v
-    npm -v
+    nvm version
+    # ~1.1.12
     ```
 
-### c. Docker y Docker Compose
+#### Una vez instalado **NVM**
+
+2. En la terminar Corre estos comandos:
+    ```bash
+    nvm install 18.17.1
+    nvm use 18.17.1
+    npm install -g npm@10.8.2
+    ```
+
+
+2. Verifica la instalación:
+    ```bash
+    node -v 
+    # 18.17.1
+    npm -v
+    # 10.8.2
+    ```
+
+### c. Descargar e instalar Python 3.12.4
+1. Ve a la página oficial:
+🔗 [Descargar Python 3.12.4](https://www.python.org/downloads/release/python-3124/)
+
+2. Ejecuta el instalador y marca la opción "Add Python to PATH".
+
+3. Ejecuta los siguientes comandos:
+
+    ```bash
+    python -m ensurepip
+    python -m pip install setuptools
+    ```
+4. Instala y luego verifica con:
+
+    ```bash
+    python --version
+    # Python 3.12.4
+    ```
+
+### d. Docker y Docker Compose
 1. Descarga e instala [Docker Desktop](https://www.docker.com/products/docker-desktop/) para Windows.
 2. Durante la instalación, habilita WSL2 y Docker Compose.
 
@@ -66,11 +112,32 @@ Bienvenido al equipo. Esta guía te ayudará a configurar tu entorno de desarrol
 ### a. Angular CLI
 1. Instala Angular CLI para el desarrollo frontend ejecutando:
     ```bash
-    npm install -g @angular/cli@16.2.0
+    npm install @angular/core@16.2.11 @angular/cli@16.2.11 --save
     ```
 2. Verifica la instalación:
     ```bash
     ng version
+    
+    #       _                      _                 _____     ___
+    #     /  \   _ __   __ _ _   _| | __ _ _ __     / ___| |   |_ _|
+    #    / △ \ | '_ \ / _` | | | | |/ _` | '__|   | |   | |    | |
+    #   / ___ \| | | | (_| | |_| | | (_| | |      | |___| |___ | |
+    #  /_/   \_\_| |_|\__, |\__,_|_|\__,_|_|       \____|_____|___|
+    #                  |___/
+    #Angular CLI: 16.2.11
+    #Node: 18.17.1
+    #Package Manager: npm 10.8.2
+    #OS: win32 x64
+
+    #Angular:
+    #...
+
+    #Package                      Version
+    #------------------------------------------------------
+    #@angular-devkit/architect    0.1602.11
+    #@angular-devkit/core         16.2.11
+    #@angular-devkit/schematics   16.2.11
+    #@schematics/angular          16.2.11
     ```
 ### b. .NET SDK
 1. Descarga e instala el .NET SDK desde [dotnet.microsoft.com](https://dotnet.microsoft.com/es-es/download/dotnet) para trabajar en el backend.
@@ -88,5 +155,3 @@ Bienvenido al equipo. Esta guía te ayudará a configurar tu entorno de desarrol
     ```
 ### b. FlutterFlow
 1.FlutterFlow es una herramienta de desarrollo en la nube, así que no necesita instalación local. Accede a ella en [FlutterFlow](https://app.flutterflow.io/) usando las credenciales proporcionadas.
-
-
